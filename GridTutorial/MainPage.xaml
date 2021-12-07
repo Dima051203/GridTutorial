@@ -9,15 +9,13 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
         </Grid.RowDefinitions>
-        <Label Text="Column 0, Row 0" />
-        <Label Grid.Column="1"
-           Text="Column 1, Row 0" />
+        <Label Grid.ColumnSpan="2"
+           Text="This text uses the ColumnSpan property to span both columns." />
         <Label Grid.Row="1"
-           Text="Column 0, Row 1" />
-        <Label Grid.Column="1"
-           Grid.Row="1"
-           Text="Column 1, Row 1" />
+           Grid.RowSpan="2"
+           Text="This text uses the RowSpan property to span two rows." />
     </Grid>
 </ContentPage>
